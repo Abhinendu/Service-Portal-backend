@@ -14,9 +14,10 @@ namespace LaptopServicePortal_2.Models
         {
 
         }
-
+        
         public DbSet<User> Users { get; set; }
         public DbSet<Ticket> Tickets { get; set; }
+        public DbSet<LaptopServicePortal_2.Models.Comment> Comment { get; set; }
     }
 
    

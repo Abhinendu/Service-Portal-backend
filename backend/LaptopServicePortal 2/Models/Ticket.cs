@@ -13,9 +13,13 @@ namespace LaptopServicePortal_2.Models
         public int TicketId { get; set; }
 
         [Column(TypeName = "nvarchar(50)")]
-        [Required] public string Summary { get; set; }
-        public string description { get; set; }
+        [Required]
+        public string Summary { get; set; }
+        
         [Column(TypeName = "nvarchar(100)")]
+        [Required]
+        public string description { get; set; }
+        [Column(TypeName = "nvarchar(50)")]
         [Required]
         public string ComplaintType { get; set; }
         [Column(TypeName = "nvarchar(3)")]
